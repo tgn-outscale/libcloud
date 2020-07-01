@@ -70,7 +70,6 @@ if PY2_pre_27 or PY3_pre_34:
     version = '.'.join([str(x) for x in sys.version_info[:3]])
     print('Version ' + version + ' is not supported. Supported versions are ' +
           ', '.join(SUPPORTED_VERSIONS))
-    sys.exit(1)
 
 
 def read_version_string():
