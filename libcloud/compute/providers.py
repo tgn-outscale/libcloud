@@ -22,6 +22,8 @@ from libcloud.common.providers import set_driver as _set_provider_driver
 from libcloud.compute.types import OLD_CONSTANT_TO_NEW_MAPPING
 from libcloud.compute.deprecated import DEPRECATED_DRIVERS
 
+import logging
+
 __all__ = [
     "Provider",
     "DRIVERS",
@@ -114,6 +116,8 @@ DRIVERS = {
     ('libcloud.compute.drivers.ec2', 'OutscaleINCNodeDriver'),
     Provider.OUTSCALE_SDK:
     ('libcloud.compute.drivers.outscale_sdk', 'OutscaleSDKNodeDriver'),
+    Provider.OUTSCALE:
+    ('libcloud.compute.drivers.outscale', 'OutscaleNodeDriver'),
     Provider.VSPHERE:
     ('libcloud.compute.drivers.vsphere', 'VSphereNodeDriver'),
     Provider.PROFIT_BRICKS:
