@@ -22,8 +22,6 @@ from libcloud.common.providers import set_driver as _set_provider_driver
 from libcloud.compute.types import OLD_CONSTANT_TO_NEW_MAPPING
 from libcloud.compute.deprecated import DEPRECATED_DRIVERS
 
-import logging
-
 __all__ = [
     "Provider",
     "DRIVERS",
